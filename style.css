@@ -1,0 +1,179 @@
+/*
+ Theme Name: Voce - Geekified
+ Description: Child theme for Voce Theme - customized for sitegeeks.guru.
+ Template: voce-theme
+ Version: 19.06.23zza
+*/
+
+/********** Custom Properties **********/
+
+/*************** Colors ***************/
+:root {
+
+    /* Primary Colors in Hex */
+    --forest-green-hex: #278C23;
+    --dark-cerulean-hex: #014C82;
+    --carrot-orange-hex: #F2911B;
+    --baby-powder-hex: #FDFDFD;
+    --smoky-black-hex: #0D0D0D;
+
+    /* Highlight colors in Hex */
+    --sienna-hex: #8A1F11;
+    --very-pale-yellow-hex: #FFF6BF;
+    --cal-poly-pomona-green-hex: #255625;
+    --yellow-apricot-hex: #F2B872;
+    --pullman-brown-hex: #604800;
+
+    /* Gray Colors in Hex */
+    --spanish-gray-hex: #999999;
+    --platinum-hex: #E5E5E5;
+    --gainsboro-hex: #DEDEDE;
+    --pastel-gray-hex: #C9C9C9;
+    --x11-gray-hex: #BABABA;
+
+    /* Less-Saturated Colors in RGBa */
+    --yellow-apricot-rgba: rgba(242, 184, 114, 0.25);
+}
+
+/********** Styles **********/
+
+body {
+    background-color: var(--baby-powder-hex);
+    color: var(--smoky-black-hex);
+    line-height: 1.6rem;
+    font-family: "Open Sans", san-serif;
+    font-weight: 400;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1em;
+    margin-top: 0;
+    font-family: Merriweather, serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    padding-bottom: .2em;
+    text-transform: capitalize;
+    color: var(--forest-green-hex);
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: 800;
+    margin-bottom: .75em;
+    padding-bottom: .2em;
+    color: var(--forest-green-hex);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--forest-green-hex);
+    font-weight: 800;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1.25em;
+    color: var(--carrot-orange-hex);
+    font-weight: 800;
+}
+
+h5 {
+    font-size: 1.25em;
+    color: var(--carrot-orange-hex);
+    font-weight: 600;
+    font-style: italic;
+}
+
+h6 {
+    font-size: 1.25em;
+    color: var(--carrot-orange-hex);
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+#sgg-masthead {
+    display: inline-block;
+    width: 80vw;
+}
+
+#sgg-masthead hr {
+    border-width: 5px;
+    border-style: groove;
+    border-color: var(--forest-green-hex);
+}
+
+#sgg-site-logo {
+    margin: 25px 10px 10px 10px;
+    float: left;
+    width: 225px;
+    border-top: 0px;
+    border-right: 2px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-style: ridge;
+    border-color: var(--forest-green-hex);
+}
+
+#sgg-site-branding h1 {
+    font-size: 4em;
+    padding-top: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#sgg-site-branding p {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+#sgg-footer {
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.1em;
+}
+
+#sgg-footer hr {
+    border-width: 5px;
+    border-style: groove;
+    border-color: var(--forest-green-hex);
+}
+
+#sgg-footer-left {
+    float: left;
+}
+
+#sgg-footer-right {
+    float: right;
+    text-align: right;
+    padding-left: 25px;
+}
+
+.widget-area {
+    background-color: var(--yellow-apricot-rgba);
+}
+
+.widget {
+    background-color: var(--yellow-apricot-rgba);
+}
+
+.widget-title {
+    color: var(--dark-cerulean-hex);
+}
+
+.full {
+    width: 95vw;
+}
