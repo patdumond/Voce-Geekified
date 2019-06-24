@@ -2,7 +2,7 @@
  Theme Name: Voce - Geekified
  Description: Child theme for Voce Theme - customized for sitegeeks.guru.
  Template: voce-theme
- Version: 19.06.24k.4
+ Version: 19.06.24k.5
 */
 
 /********** Webfonts ***************/
@@ -13,6 +13,7 @@
         url('/wp-content/themes/voce-geekified//fonts/merriweather-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -21,6 +22,7 @@
         url('/wp-content/themes/voce-geekified//fonts/novasquare-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -29,6 +31,7 @@
         url('/wp-content/themes/voce-geekified//fonts/opensans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -37,6 +40,7 @@
         url('/wp-content/themes/voce-geekified//fonts/sourcecodepro-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /********** Custom Properties **********/
