@@ -2,8 +2,42 @@
  Theme Name: Voce - Geekified
  Description: Child theme for Voce Theme - customized for sitegeeks.guru.
  Template: voce-theme
- Version: 19.06.23zza
+ Version: 19.06.24k.4
 */
+
+/********** Webfonts ***************/
+
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('/wp-content/themes/voce-geekified/fonts/merriweather-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/voce-geekified//fonts/merriweather-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nova_squarebook';
+    src: url('/wp-content/themes/voce-geekified//fonts/novasquare-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/voce-geekified//fonts/novasquare-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/wp-content/themes/voce-geekified//fonts/opensans-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/voce-geekified//fonts/opensans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_code_proregular';
+    src: url('/wp-content/themes/voce-geekified//fonts/sourcecodepro-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/voce-geekified//fonts/sourcecodepro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /********** Custom Properties **********/
 
@@ -41,7 +75,7 @@ body {
     background-color: var(--baby-powder-hex);
     color: var(--smoky-black-hex);
     line-height: 1.6rem;
-    font-family: "Open Sans", san-serif;
+    font-family: "open_sansregular", sans-serif;
     font-weight: 400;
 }
 
@@ -54,7 +88,7 @@ h5,
 h6 {
     margin-bottom: 1em;
     margin-top: 0;
-    font-family: Merriweather, serif;
+    font-family: "merriweatherregular", serif;
 }
 
 h1 {
@@ -105,6 +139,12 @@ p {
     font-size: 1.1em;
 }
 
+pre,
+code,
+address {
+    font-family: "source_code_proregular", mono;
+}
+
 #sgg-masthead {
     display: inline-block;
     width: 80vw;
@@ -117,7 +157,7 @@ p {
 }
 
 #sgg-site-logo {
-    margin: 25px 10px 10px 10px;
+    margin: 30px 10px 10px 10px;
     float: left;
     width: 225px;
     border-top: 0px;
@@ -126,30 +166,39 @@ p {
     border-left: 0px;
     border-style: ridge;
     border-color: var(--forest-green-hex);
+    padding-right: 10px;
 }
 
 #sgg-site-branding h1 {
-    font-size: 4em;
-    padding-top: 10px;
-    margin: 5px 5px 5px 5px;
+    font-family: "Nova Square", cursive;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px;
 }
 
 #sgg-site-branding p {
+    font-family: "Merriweather", cursive;
     font-size: 1.5em;
     font-style: italic;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 #sgg-footer {
     display: inline-block;
     font-size: 1em;
-    line-height: 1.1em;
+    line-height: 1em;
+    width: 100%;
 }
 
 #sgg-footer hr {
     border-width: 5px;
     border-style: groove;
     border-color: var(--forest-green-hex);
+    width: auto;
 }
 
 #sgg-footer-left {
